@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v5
         with: 
           context: ./backend
-          tags: backend:test
+          tags: backend:test 

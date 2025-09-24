@@ -14,8 +14,8 @@ permissions:
   id-token: write
 env:
   AWS_REGION: us-east-1
-  AWS_ACCOUNT_ID: "642137768226"
-  ECR_REGISTRY: ${{ env.AWS_ACCOUNT_ID }}.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com
+##  AWS_ACCOUNT_ID: "642137768226"
+  ECR_REGISTRY: 642137768226.dkr.ecr.${{ env.AWS_REGION }}.amazonaws.com
   IMAGE_TAG: ${{ github.sha }}
 jobs:
   build-and-push:

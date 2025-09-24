@@ -14,7 +14,7 @@ permissions:
   id-token: write
 env:
   AWS_REGION: us-east-1
-##  AWS_ACCOUNT_ID: "642137768226"
+##  WS_ACCOUNT_ID: "642137768226"
   ECR_REGISTRY: 642137768226.dkr.ecr.us-east-1.amazonaws.com 
   IMAGE_TAG: ${{ github.sha }}
 jobs:

@@ -58,7 +58,7 @@ jobs:
         context: ${{ matrix.service.path }}
         file: ${{ matrix.service.path }}/Dockerfile
         push: true
-        tags: ${{ env.ECR_REGISTRY }}/${{ matrix.service.name }}:${{ env.IMAGE_TAG }},${{ env.ECR_REGISTRY }}/${{ matrix.service.name }}:latest
+        tags: ${{ env.ECR_REGISTRY }}/${{ matrix.service.name }}:${{ env.IMAGE_TAG }},${{ env.ECR_REGISTRY }}/${{ matrix.service.name }}:latest 
     - name: Image digest output
       run: echo "IMAGE=${{ env.ECR_REGISTRY }}/${{ matrix.service.name }}:${{ env.IMAGE_TAG }}" >> $GITHUB_OUTPUT
   deploy-argocd:
